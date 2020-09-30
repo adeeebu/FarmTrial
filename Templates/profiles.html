@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>Create Farmer Profile</title>
+<br>
+<h1 style="color:rgb(28, 121, 0)";> Join India's first online farming community </h1>
+     <p> Receive latest updates on all the information you need to get the best harvest on your farm </p>
+<br>
+
+<form method = 'POST'  action="/signup/">
+{% csrf_token %}
+
+
+<div>
+    <div class="form-row">
+
+    	<div class="col">
+      		<input type="text" class="form-control" placeholder="First name" name = 'fname'>
+    	</div>
+
+    	<div class="col">
+      		<input type="text" class="form-control" placeholder="Last name" name = 'lname'>
+		</div>
+</div>
+
+
+<br>
+
+<div>
+    <div class="form-row">
+
+    	<div class="col">
+      		<input type="text" class="form-control" placeholder="District" name = 'dist'>
+    	</div>
+
+    	<div class="col">
+      		<input type="text" class="form-control" placeholder="State" name = 'state'>
+		</div>
+</div>
+
+
+<br>
+
+
+
+ <div class="form-group">
+   
+  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email" name="email">
+ </div>
+
+ <div class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter a Password" name = 'passwd'>
+ </div>
+
+
+	<button type="submit" class="btn btn-primary">Sign up Now</button> 
+</form>
+
+
+{% endblock %}

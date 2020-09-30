@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{%block content %}
+
+<h1 style = "color:rgb(28,121,0)"> Welcome to FarmBase </h1>
+<p> India's largest online farming community, with thousands of farmers across the country.
+<br>Make a free account and get official government updates on crop prices, weather bulletins and tips to grow crops better. </p>
+
+
+<br>
+
+<strong> Log in to see the best conditions for crops in your farm: </strong> 
+
+<a href = "http://localhost:8000/comingsoon/" > <button type="submit" class="btn btn-primary">View Dashboard</button> </a> 
+<br>
+<br>
+
+No account? Sign up now to become a member of India's largest online farming community: 
+
+<a href = "/signup/" > <button type="submit" class="btn btn-primary">Sign up Now</button> </a> 
+
+<br/>
+<br/>
+
+Visit our blog:
+
+<a href = "/comingsoon/" > <button type="submit" class="btn btn-primary"> Visit </button> </a> 
+
+<br>
+<br>
+
+<p> Visit our shop to get the best equipments to start your farm 
+
+<a href = "/shop/" > <button type="submit" class="btn btn-primary">Visit Shop</button> </a> 
+</p>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<h1 style = "color:rgb(28,121,0)"> Welcome to FarmBase Shop </h1>
+	<p> View our list of products available here. </p>
+	<br>
+
+	{% for item in all %}	
+		<strong> {{ item.prod_name}} <br> <hr> 
+		Sold by: {{item.prod_brand}} </strong> <br/>
+		Price: {{item.prod_price}} Rupees/kg <br/>
+		Type: {{item.prod_type}} <br/>
+		<hr>
+		<strong> <a href= {{item.prod_link}} ><button type="submit" class="btn btn-primary"> Buy </button> </a>  </strong> <br><br>
+		<hr>
+		<br>
+		<br>
+		<br>
+	{% endfor %}
+
+{% endblock %}
+
+
